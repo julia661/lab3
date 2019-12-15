@@ -1,0 +1,5 @@
+-------Inactive-------
+<div *ngFor="let user of userService.unactiveUsers">
+  {{user}}
+  <button nz-button nzType="dashed" (click)="userService.setToActive(user)">SetToActive</button>
+</div>
